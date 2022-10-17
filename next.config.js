@@ -10,6 +10,14 @@ const withPWA = require('next-pwa')({
 })
 
 module.exports = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'media.graphassets.com'
+      }
+    ]
+  },
   nextConfig,
   withPWA
 }
